@@ -1,0 +1,44 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    color: rgba(16, 131, 157, 1);
+}
+
+.paginationButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 0.1s;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(0, 30, 81, 1);
+}
+
+.paginationDisableButton {
+    width: 48px;
+
+}
+
+.paginationActiveButton {
+    background-color: rgba(16, 131, 157, 1);
+    color: white;
+}
+
+.paginationCursor{
+    cursor: pointer;
+}
+
+.paginationButton:hover{
+    color: white;
+}
+
+.paginationPrevious {
+    margin-right: 5px;
+}
+
+.paginationNext {
+    margin-left: 5px;
+}

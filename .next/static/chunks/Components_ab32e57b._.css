@@ -1,0 +1,30 @@
+/* [project]/Components/GradientHover/style.css [app-client] (css) */
+.gradientHoverPassive {
+  background: linear-gradient(to top, #000612d9 0%, #00061200 54%, #0000 100%);
+}
+
+.gradientHoverActive {
+  background: linear-gradient(to top, #10839dd9 0%, #10839d00 54%, #0000 100%);
+}
+
+
+/* [project]/Components/NewsCarousel/style.css [app-client] (css) */
+.newsCarouselWrapper {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsCarouselImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.newsCarouselGradientBottom {
+  background: linear-gradient(to top, #00102d 0%, #00102d33 45%, #00102d00 100%);
+}
+
+
+/*# sourceMappingURL=Components_ab32e57b._.css.map*/

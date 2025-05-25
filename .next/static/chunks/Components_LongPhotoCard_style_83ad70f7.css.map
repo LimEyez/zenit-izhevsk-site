@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Work/Liza/zenit-izhevsk-site/Components/LongPhotoCard/style.css"],"sourcesContent":[".latestNewsElementGradientPassive {\r\n    background: linear-gradient(\r\n        to top,\r\n        rgba(0, 6, 18, 0.85) 0%,\r\n        rgba(0, 6, 18, 0) 54%,\r\n        transparent 100%\r\n    );\r\n}\r\n\r\n.latestNewsElementGradientActive {\r\n    background: linear-gradient(\r\n        to top,\r\n        rgba(16, 131, 157, 0.85) 0%,\r\n        rgba(16, 131, 157, 0) 54%,\r\n        transparent 100%\r\n    );\r\n}"],"names":[],"mappings":"AAAA;;;;AASA","debugId":null}}]
+}

@@ -1,0 +1,11 @@
+/* [project]/Components/NewsCarousel/style.css [app-client] (css) */
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.newsCarouselGradientBottom {
+  background: linear-gradient(to top, #00102d 0%, #00102d33 45%, #00102d00 100%);
+}
+
+/*# sourceMappingURL=Components_NewsCarousel_style_css_f9ee138c._.single.css.map*/

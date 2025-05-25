@@ -1,0 +1,37 @@
+/* [project]/Components/DropdownFilter/style.scss.css [app-client] (css) */
+.dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.dropdownElement {
+  cursor: default;
+  padding-left: 10px;
+  padding-right: 16px;
+}
+
+.dropdownElement p, .dropdownActiveMainblock, .dropdownActiveMainblock p {
+  cursor: default;
+}
+
+.dropdownListBlock::-webkit-scrollbar {
+  width: 0;
+}
+
+.dropdownListBlock::-webkit-scrollbar-track {
+  background: #fff0;
+}
+
+.dropdownListBlock::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 3px solid #fff0;
+  border-radius: 20px;
+}
+
+
+/*# sourceMappingURL=Components_DropdownFilter_style_scss_c3cb5c4e.css.map*/

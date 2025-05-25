@@ -1,0 +1,45 @@
+.dropdown {
+    font-family: 'Inter';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.dropdownElement {
+    padding-left: 10px;
+    padding-right: 16px; // размер скроллбара
+  
+    cursor: default;
+
+    p {
+        cursor: default;
+    }
+}
+
+.dropdownActiveMainblock {
+    cursor: default;
+
+    p {
+        cursor: default;
+    }
+}
+
+.dropdownListBlock {
+
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #ffffff00;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ffffff; /* Цвет бегунка */
+        border-radius: 20px; /* Округление бегунка */
+        border: 3px solid #ffffff00; /* Оформление границ бегунка */
+        background-clip: padding-box;
+      }
+}

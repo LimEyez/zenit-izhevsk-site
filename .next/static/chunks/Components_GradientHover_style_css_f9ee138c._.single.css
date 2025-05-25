@@ -1,0 +1,10 @@
+/* [project]/Components/GradientHover/style.css [app-client] (css) */
+.gradientHoverPassive {
+  background: linear-gradient(to top, #000612d9 0%, #00061200 54%, #0000 100%);
+}
+
+.gradientHoverActive {
+  background: linear-gradient(to top, #10839dd9 0%, #10839d00 54%, #0000 100%);
+}
+
+/*# sourceMappingURL=Components_GradientHover_style_css_f9ee138c._.single.css.map*/

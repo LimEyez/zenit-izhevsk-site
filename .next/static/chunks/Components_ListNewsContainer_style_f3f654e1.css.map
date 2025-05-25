@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Work/Liza/zenit-izhevsk-site/Components/ListNewsContainer/style.css"],"sourcesContent":[".pagination {\r\n    display: flex;\r\n    justify-content: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    color: rgba(16, 131, 157, 1);\r\n}\r\n\r\n.paginationButton{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    transition: all;\r\n    transition-duration: 0.1s;\r\n    width: 48px;\r\n    height: 48px;\r\n    background-color: rgba(0, 30, 81, 1);\r\n}\r\n\r\n.paginationDisableButton {\r\n    width: 48px;\r\n\r\n}\r\n\r\n.paginationActiveButton {\r\n    background-color: rgba(16, 131, 157, 1);\r\n    color: white;\r\n}\r\n\r\n.paginationCursor{\r\n    cursor: pointer;\r\n}\r\n\r\n.paginationButton:hover{\r\n    color: white;\r\n}\r\n\r\n.paginationPrevious {\r\n    margin-right: 5px;\r\n}\r\n\r\n.paginationNext {\r\n    margin-left: 5px;\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;;;;;;;AAWA;;;;AAKA;;;;;AAKA;;;;AAIA;;;;AAIA;;;;AAIA","debugId":null}}]
+}

@@ -1,0 +1,9 @@
+table.rounded-corners {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+  }
+  
+  table.rounded-corners th, table.rounded-corners td {
+    border: 1px solid black;
+  }

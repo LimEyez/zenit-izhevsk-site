@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Work/Liza/zenit-izhevsk-site/Components/GradientHover/style.css"],"sourcesContent":[".gradientHoverPassive {\r\n    background: linear-gradient(\r\n        to top,\r\n        rgba(0, 6, 18, 0.85) 0%,\r\n        rgba(0, 6, 18, 0) 54%,\r\n        transparent 100%\r\n    );\r\n}\r\n\r\n.gradientHoverActive {\r\n    background: linear-gradient(\r\n        to top,\r\n        rgba(16, 131, 157, 0.85) 0%,\r\n        rgba(16, 131, 157, 0) 54%,\r\n        transparent 100%\r\n    );\r\n}"],"names":[],"mappings":"AAAA;;;;AASA","debugId":null}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Work/Liza/zenit-izhevsk-site/Components/NewsCarousel/style.css"],"sourcesContent":[".newsCarouselWrapper {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 50vh;\r\n    overflow: hidden; /* Обрезаем все, что выходит за границы */\r\n}\r\n\r\n.newsCarouselImage {\r\n    width: 100%;\r\n    height: 100%;\r\n    object-fit: cover;\r\n}\r\n\r\n.newsCarouselGradientBottom {\r\n    background: linear-gradient(\r\n        to top,\r\n        rgba(0, 16, 45, 1) 0%,\r\n        rgba(0, 16, 45, 0.2) 45%,\r\n        rgba(0, 16, 45, 0) 100%\r\n    );\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;AAMA","debugId":null}}]
+}

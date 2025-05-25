@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Work/Liza/zenit-izhevsk-site/Components/DropdownFilter/style.scss.css"],"sourcesContent":[".dropdown{font-family:\"Inter\";-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:20px;font-weight:300}.dropdownElement{padding-left:10px;padding-right:16px;cursor:default}.dropdownElement p{cursor:default}.dropdownActiveMainblock{cursor:default}.dropdownActiveMainblock p{cursor:default}.dropdownListBlock::-webkit-scrollbar{width:0px}.dropdownListBlock::-webkit-scrollbar-track{background:hsla(0,0%,100%,0)}.dropdownListBlock::-webkit-scrollbar-thumb{background-color:#fff;border-radius:20px;border:3px solid hsla(0,0%,100%,0);background-clip:padding-box}"],"names":[],"mappings":"AAAA;;;;;;;;;AAA0H;;;;;;AAAqE;;;;AAAoH;;;;AAAgD;;;;AAAyE","debugId":null}}]
+}

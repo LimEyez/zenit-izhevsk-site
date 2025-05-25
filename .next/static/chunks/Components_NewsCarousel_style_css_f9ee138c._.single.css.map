@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Components/NewsCarousel/style.css"],"sourcesContent":["\r\n.swiper {\r\n    width: 600px;\r\n    height: 300px;\r\n}\r\n\r\n\r\n.newsCarouselGradientBottom {\r\n    background: linear-gradient(to top,\r\n            rgba(0, 16, 45, 1) 0%,\r\n            rgba(0, 16, 45, 0.2) 45%,\r\n            rgba(0, 16, 45, 0) 100%);\r\n}"],"names":[],"mappings":"AACA;;;;;AAMA"}}]
+}
