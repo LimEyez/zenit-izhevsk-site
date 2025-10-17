@@ -20,30 +20,30 @@ P.s.
 Исопльзуются исключительно "px" по макету (для пк-версии)
 
 Скриншоты сайта (не макет):
-![MainPage](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/mainPage.png)
+![MainPage](demoScreenshots/mainPage.png)
 
-![NewsPage](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/newsPage.png)
+![NewsPage](demoScreenshots/newsPage.png)
 
-![TeamPage-players](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/teamPage-players.png)
+![TeamPage-players](demoScreenshots/teamPage-players.png)
 
-![TeamPage-coaches](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/teamPage-coaches.png)
+![TeamPage-coaches](demoScreenshots/teamPage-coaches.png)
 
-![TeamPage-staff](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/teamPage-staff.png)
+![TeamPage-staff](demoScreenshots/teamPage-staff.png)
 
-![ClubPage-about](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/clubPage-about.png)
+![ClubPage-about](demoScreenshots/clubPage-about.png)
 
-![ClubPage-administration](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/clubPage-administration.png)
+![ClubPage-administration](demoScreenshots/clubPage-administration.png)
 
-![ClubPage-media](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/clubPage-media.png)
+![ClubPage-media](demoScreenshots/clubPage-media.png)
 
-![MatchesPage-schedule](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/matchesPage-schedule.png)
+![MatchesPage-schedule](demoScreenshots/matchesPage-schedule.png)
 
-![MatchesPage-tables](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/matchesPage-tables.png)
+![MatchesPage-tables](demoScreenshots/matchesPage-tables.png)
 
-![StadiumPage-about](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/stadiumPage-about.png)
+![StadiumPage-about](demoScreenshots/stadiumPage-about.png)
 
-![StadiumPage-HowToGet](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/stadiumPage-how-to-get.png)
+![StadiumPage-HowToGet](demoScreenshots/stadiumPage-how-to-get.png)
 
-![StadiumPage-parking](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/stadiumPage-parking.png)
+![StadiumPage-parking](demoScreenshots/stadiumPage-parking.png)
 
-![ContactPage](https://github.com/LimEyez/zenit-izhevsk-site/tree/main/demoScreenshots/contactPage.png)
+![ContactPage](demoScreenshots/contactPage.png)
