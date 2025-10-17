@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Установка:
+npm install
 
-## Getting Started
-
-First, run the development server:
-
-```bash
+Запуск:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Frontend сайта
+Используется:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- tailwind css
+- NextJS
+- React loading indicators
+- React paginate
+- React icons
+- Swiper
+- scss
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+P.s.
+Отсутствует полная адаптивность:
+Исопльзуются исключительно "px" по макету (для пк-версии)
 
-## Learn More
+Скриншоты сайта (не макет):
+![MainPage](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/mainPage.png)
 
-To learn more about Next.js, take a look at the following resources:
+![NewsPage](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/newsPage.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![TeamPage-players](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/teamPage-players.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![TeamPage-coaches](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/teamPage-coaches.png)
 
-## Deploy on Vercel
+![TeamPage-staff](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/teamPage-staff.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![ClubPage-about](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/clubPage-about.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![ClubPage-administration](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/clubPage-administration.png)
+
+![ClubPage-media](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/clubPage-media.png)
+
+![MatchesPage-schedule](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/matchesPage-schedule.png)
+
+![MatchesPage-tables](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/matchesPage-tables.png)
+
+![StadiumPage-about](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/stadiumPage-about.png)
+
+![StadiumPage-HowToGet](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/stadiumPage-how-to-get.png)
+
+![StadiumPage-parking](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/stadiumPage-parking.png)
+
+![ContactPage](https://github.com/LimEyez/zenit-izhevsk-site/demoScreenshots/contactPage.png)

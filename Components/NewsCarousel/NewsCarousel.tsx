@@ -8,9 +8,10 @@ import 'swiper/css/navigation'; // если используешь стрелк�
 // import 'swiper/css/pagination'
 import Link from 'next/link';
 import { RouteNames } from '@/lib/routesInfo';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import PaginationNewsCarousel from './PaginationNewsCarousel';
 import type { Swiper as SwiperClass } from 'swiper';
+import Image from 'next/image';
 
 export default function NewsCarousel() {
 
@@ -69,11 +70,7 @@ export default function NewsCarousel() {
                 swiper.autoplay.start();
             }}
             onSwiper={(swiper) => setSwiperInstance(swiper)}
-            className={`
-            w-[100vw] max-h-[70vh] min-h-[440px] flex 
-            justify-center items-center relative 
-            ]overflow-hidden transition-all duration-0 
-        `}
+            className={`w-[100vw] max-h-[70vh] min-h-110 flex justify-center items-center relative overflow-hidden transition-all duration-0`}
             style={{
                 height: sizesNewsContainer.height,
                 width: sizesNewsContainer.width,
@@ -81,7 +78,7 @@ export default function NewsCarousel() {
             loop={true}
             spaceBetween={30}
             autoplay={{
-                delay: 5000,
+                delay: 2500,
                 disableOnInteraction: false,
             }}
             // navigation={true}
@@ -91,24 +88,29 @@ export default function NewsCarousel() {
                 return (
                     <SwiperSlide
                         className='relative'
+                        key={"Slide index=" + index}
                     >
                         <div className='w-full h-full relative flex flex-col items-center'>
-                            <img
+                            <Image
                                 alt={`Фото новости ${news.title}-newsId=${news.id}`}
                                 // src={news.img != null && news.img != undefined && news.img != '' ? 
                                 //     news.img : DefaultCarouselImage}
-                                className="w-full h-full object-cover"
+                                // className="w-full h-full object-cover"
+                                fill
+                                quality={100}
+                                objectFit='cover'
                                 src={'/images/Default-Carousel-Image.png'}
                             />
                             <div className="absolute z-20 inset-0 h-full w-full newsCarouselGradientBottom"></div>
                             <div className='w-full h-full flex flex-col justify-end items-center absolute inset-0'>
-                                <div className='w-full max-w-[1200px] z-30 pb-[60px]'>
+                                <div className='w-full max-w-300 z-30 pb-15'>
 
                                     <Link
                                         href={RouteNames.news + `/${news.id}`}
                                         className={`
-                                         text-white text-[60px] w-full font-extrabold 
+                                         text-white text-3xl w-full font-extrabold 
                                         italic text-left leading-[1.1]
+                                        md:text-4xl lg:text-6xl
                                         `}
                                     >
                                         {news.title}
@@ -119,8 +121,8 @@ export default function NewsCarousel() {
                     </SwiperSlide>
                 )
             })}
-            <div className='absolute flex flex-col pb-[30px] justify-end items-center z-60 inset-0 pointer-events-none'>
-                <div className='w-full max-w-[1200px] pl-[10px] pr-[10px]'>
+            <div className='absolute flex flex-col pb-7.5 justify-end items-center z-60 inset-0 pointer-events-none'>
+                <div className='w-full max-w-300 px-2.5'>
                     <PaginationNewsCarousel
                         NumberOfSlides={LastFiveNews.length}
                         className='w-full h-full '

@@ -12,7 +12,7 @@ export default function PhotoCard(props: PhotoCardProps) {
     //Компонент изображения (Показывает либо переданное изображение, либо стандартное)
     const ImageComponent = () => {
         return (
-            <div className="w-full h-full scale-110 hover:scale-100 transition-all duration-300">
+            <div className="w-full h-full scale-110 group-hover:scale-100 transition-all duration-300">
                 <Image
                     alt={props.alt ? props.alt : "Зенит-Ижевск стандартная обложка свежей нвости"}
                     src={props.src ? props.src : DefaultCardImage}

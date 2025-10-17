@@ -2,20 +2,17 @@
 import { useState } from "react";
 import BasicTitle from "../BasicTitle/BasicTitle";
 import PhotoCard from "../PhotoCard/PhotoCard";
-import Link from "next/link";
 import Loader from "../Loader/Loader";
 import ShowMoreButton from "../ShowMoreButton/ShowMoreButton";
 
 export default function CollectionsBlock() {
 
-    let collectionId = 1;
     const collectionsCount = 14;
     const maxGetElements = 3;
 
 
-    const [data, setData] = useState(new Array(maxGetElements).fill(null).map((_) => {
-        const collection = { name: `Название альбома ${collectionId}`, href: '/', src: '' };
-        collectionId++;
+    const [data, setData] = useState(new Array(maxGetElements).fill(null).map((_, index) => {
+        const collection = { name: `Название альбома ${index}`, href: '/', src: '' };
         return collection;
     }));
 
@@ -27,9 +24,8 @@ export default function CollectionsBlock() {
             () => {
 
                 const countMorePhotos = Math.min(collectionsCount - data.length, maxGetElements)
-                const moreCollections = new Array(countMorePhotos).fill(null).map((_) => {
-                    const collection = { name: `Название альбома ${collectionId}`, href: '/', src: '' };
-                    collectionId++;
+                const moreCollections = new Array(countMorePhotos).fill(null).map((_, index) => {
+                    const collection = { name: `Название альбома ${data.length + index}`, href: '/', src: '' };
                     return collection;
                 });
                 setData([...data, ...moreCollections]);

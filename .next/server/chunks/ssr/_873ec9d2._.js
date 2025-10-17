@@ -179,7 +179,7 @@ function PhotoCard(props) {
     //Компонент изображения (Показывает либо переданное изображение, либо стандартное)
     const ImageComponent = ()=>{
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-full scale-110 hover:scale-100 transition-all duration-300",
+            className: "w-full h-full scale-110 group-hover:scale-100 transition-all duration-300",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 alt: props.alt ? props.alt : "Зенит-Ижевск стандартная обложка свежей нвости",
                 src: props.src ? props.src : __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Default$2d$Card$2d$Image$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Default$2d$Card$2d$Image$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
@@ -914,8 +914,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$TournamentTabl
 ;
 ;
 function TournamentTableElement(props) {
-    const borderWidthValue = 2; //px
-    const borderRadiusValue = 30; //px
     const colSpan = [
         'col-span-4',
         'col-span-20',
@@ -968,14 +966,14 @@ function TournamentTableElement(props) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `w-full bg-white overflow-hidden border-[2px] gap-[2px] 
         rounded-[30px] grid grid-cols-58 auto-rows-[minmax(60px,auto)]
-        text-[30px]`,
+        text-[30px] border-[4px] border-white`,
         children: [
             tableHeadNames.map((th, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$TournamentTables$2f$TableElement$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     title: th.name,
                     className: `font-extrabold ${colSpan[index]}`
                 }, th.name, false, {
                     fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                    lineNumber: 45,
+                    lineNumber: 43,
                     columnNumber: 17
                 }, this)),
             teamInfo.map((team, indexTeam)=>team.map((info, index)=>{
@@ -987,20 +985,20 @@ function TournamentTableElement(props) {
                                     className: "w-[50px] h-[50px] bg-white mr-[15px] flex-shrink-0"
                                 }, void 0, false, {
                                     fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 51,
                                     columnNumber: 33
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: info
                                 }, void 0, false, {
                                     fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 54,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, props.groupName + 'index=' + indexTeam + '-indexParam=' + index, true, {
                             fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                            lineNumber: 52,
+                            lineNumber: 50,
                             columnNumber: 29
                         }, this);
                     } else {
@@ -1009,7 +1007,7 @@ function TournamentTableElement(props) {
                             title: info
                         }, props.groupName + 'index=' + indexTeam + '-indexParam=' + index, false, {
                             fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                            lineNumber: 63,
+                            lineNumber: 61,
                             columnNumber: 29
                         }, this);
                     }
@@ -1017,7 +1015,7 @@ function TournamentTableElement(props) {
         ]
     }, void 0, true, {
         fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-        lineNumber: 39,
+        lineNumber: 37,
         columnNumber: 9
     }, this);
 }
@@ -1287,7 +1285,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Backgrou
 ;
 ;
 function Home() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$NewsCarousel$2f$NewsCarousel$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
@@ -1340,11 +1338,7 @@ function Home() {
                 columnNumber: 7
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/app/page.tsx",
-        lineNumber: 11,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 }
 }}),
 "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js server component)": ((__turbopack_context__) => {

@@ -3,22 +3,19 @@ import Image from "next/image";
 import BasicTitle from "../BasicTitle/BasicTitle";
 import Link from "next/link";
 import DefaultPreviewVideo from '@/public/images/Default-Video-Preview-Image.png'
-import { DiCelluloid } from "react-icons/di";
 import GradientHover from "../GradientHover/GradientHover";
 import { useState } from "react";
 import ShowMoreButton from "../ShowMoreButton/ShowMoreButton";
-import { ThreeDot } from "react-loading-indicators";
 import Loader from "../Loader/Loader";
 
 export default function VideosBlock() {
 
-    let videoId = 1;
+
     const videosCount = 14;
     const maxGetElements = 6;
 
-    const [data, setData] = useState(new Array(maxGetElements).fill(null).map((_) => {
-        const video = { name: `Название видео ${videoId}`, href: '', src: '' };
-        videoId++;
+    const [data, setData] = useState(new Array(maxGetElements).fill(null).map((_,index) => {
+        const video = { name: `Название видео ${index}`, href: '', src: '' };
         return video;
     }));
 
@@ -30,9 +27,8 @@ export default function VideosBlock() {
             () => {
 
                 const countMoreVideos = Math.min(videosCount - data.length, maxGetElements)
-                const moreVideos = new Array(countMoreVideos).fill(null).map((_) => {
-                    const video = { name: `Название видео ${videoId}`, href: '', src: '' };
-                    videoId++;
+                const moreVideos = new Array(countMoreVideos).fill(null).map((_,index) => {
+                    const video = { name: `Название видео ${data.length  + index}`, href: '', src: '' };
                     return video;
                 });
                 setData([...data, ...moreVideos]);

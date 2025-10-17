@@ -42,5 +42,13 @@
   margin-left: 5px;
 }
 
+.paginationLink {
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+}
+
 
 /*# sourceMappingURL=Components_ListNewsContainer_style_f3f654e1.css.map*/

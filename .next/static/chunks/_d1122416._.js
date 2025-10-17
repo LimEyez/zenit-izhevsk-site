@@ -12,9 +12,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function BasicTitle(props) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-full h-auto flex justify-center items-center mb-[15px]",
+        className: "w-full h-auto flex justify-center items-center mb-[15px] ",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-            className: `text-[60px] font-extrabold text-center`,
+            className: `text-[26px] font-extrabold text-center
+                    md:text-[32px]`,
             style: {
                 fontSize: props.fontSize,
                 fontWeight: props.fontWeight
@@ -132,7 +133,7 @@ function PhotoCard(props) {
     //Компонент изображения (Показывает либо переданное изображение, либо стандартное)
     const ImageComponent = ()=>{
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-full scale-110 hover:scale-100 transition-all duration-300",
+            className: "w-full h-full scale-110 group-hover:scale-100 transition-all duration-300",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 alt: props.alt ? props.alt : "Зенит-Ижевск стандартная обложка свежей нвости",
                 src: props.src ? props.src : __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Default$2d$Card$2d$Image$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Default$2d$Card$2d$Image$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
@@ -327,17 +328,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 function CollectionsBlock() {
     _s();
-    let collectionId = 1;
     const collectionsCount = 14;
     const maxGetElements = 3;
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(new Array(maxGetElements).fill(null).map({
-        "CollectionsBlock.useState": (_)=>{
+        "CollectionsBlock.useState": (_, index)=>{
             const collection = {
-                name: `Название альбома ${collectionId}`,
+                name: `Название альбома ${index}`,
                 href: '/',
                 src: ''
             };
-            collectionId++;
             return collection;
         }
     }["CollectionsBlock.useState"]));
@@ -346,13 +345,12 @@ function CollectionsBlock() {
         setLoadingStatus(true);
         setTimeout(()=>{
             const countMorePhotos = Math.min(collectionsCount - data.length, maxGetElements);
-            const moreCollections = new Array(countMorePhotos).fill(null).map((_)=>{
+            const moreCollections = new Array(countMorePhotos).fill(null).map((_, index)=>{
                 const collection = {
-                    name: `Название альбома ${collectionId}`,
+                    name: `Название альбома ${data.length + index}`,
                     href: '/',
                     src: ''
                 };
-                collectionId++;
                 return collection;
             });
             setData([
@@ -371,7 +369,7 @@ function CollectionsBlock() {
                 fontWeight: 500
             }, void 0, false, {
                 fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                lineNumber: 43,
+                lineNumber: 39,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -392,7 +390,7 @@ function CollectionsBlock() {
                                     children: collection.name
                                 }, void 0, false, {
                                     fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 56,
                                     columnNumber: 37
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -401,51 +399,51 @@ function CollectionsBlock() {
                                         children: 'Смотеть ->'
                                     }, void 0, false, {
                                         fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 62,
                                         columnNumber: 41
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 59,
                                     columnNumber: 37
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                            lineNumber: 55,
+                            lineNumber: 51,
                             columnNumber: 33
                         }, this)
                     }, `Альбом ${collection.name}-index=${index}`, false, {
                         fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                        lineNumber: 49,
+                        lineNumber: 45,
                         columnNumber: 29
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                lineNumber: 44,
+                lineNumber: 40,
                 columnNumber: 13
             }, this),
             loadingStatus ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$Loader$2f$Loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                lineNumber: 81,
+                lineNumber: 77,
                 columnNumber: 21
             }, this) : null,
             data.length !== collectionsCount || loadingStatus ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$ShowMoreButton$2f$ShowMoreButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 func: getMoreCollections
             }, void 0, false, {
                 fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-                lineNumber: 86,
+                lineNumber: 82,
                 columnNumber: 21
             }, this) : null
         ]
     }, void 0, true, {
         fileName: "[project]/Components/CollectionsBlock/CollectionsBlock.tsx",
-        lineNumber: 42,
+        lineNumber: 38,
         columnNumber: 9
     }, this);
 }
-_s(CollectionsBlock, "HDQJUA99pVmv57pz6gH1/OcxUEw=");
+_s(CollectionsBlock, "jUIf582UYFYeUtzufJWx1yeO6hk=");
 _c = CollectionsBlock;
 var _c;
 __turbopack_context__.k.register(_c, "CollectionsBlock");
@@ -510,17 +508,15 @@ var _s = __turbopack_context__.k.signature();
 ;
 function VideosBlock() {
     _s();
-    let videoId = 1;
     const videosCount = 14;
     const maxGetElements = 6;
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(new Array(maxGetElements).fill(null).map({
-        "VideosBlock.useState": (_)=>{
+        "VideosBlock.useState": (_, index)=>{
             const video = {
-                name: `Название видео ${videoId}`,
+                name: `Название видео ${index}`,
                 href: '',
                 src: ''
             };
-            videoId++;
             return video;
         }
     }["VideosBlock.useState"]));
@@ -529,13 +525,12 @@ function VideosBlock() {
         setLoadingStatus(true);
         setTimeout(()=>{
             const countMoreVideos = Math.min(videosCount - data.length, maxGetElements);
-            const moreVideos = new Array(countMoreVideos).fill(null).map((_)=>{
+            const moreVideos = new Array(countMoreVideos).fill(null).map((_, index)=>{
                 const video = {
-                    name: `Название видео ${videoId}`,
+                    name: `Название видео ${data.length + index}`,
                     href: '',
                     src: ''
                 };
-                videoId++;
                 return video;
             });
             setData([
@@ -554,7 +549,7 @@ function VideosBlock() {
                 fontWeight: 500
             }, void 0, false, {
                 fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                lineNumber: 46,
+                lineNumber: 42,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -572,7 +567,7 @@ function VideosBlock() {
                                 alt: `Превью видео ${video.name}`
                             }, void 0, false, {
                                 fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                                lineNumber: 59,
+                                lineNumber: 55,
                                 columnNumber: 37
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                 children: [
@@ -582,7 +577,7 @@ function VideosBlock() {
                                         alt: `Стандартная обложка видео Зенит Ижевск`
                                     }, void 0, false, {
                                         fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 62,
                                         columnNumber: 41
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -598,12 +593,12 @@ function VideosBlock() {
                                             children: video.name
                                         }, void 0, false, {
                                             fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 73,
                                             columnNumber: 45
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 67,
                                         columnNumber: 41
                                     }, this)
                                 ]
@@ -612,41 +607,41 @@ function VideosBlock() {
                                 passiveEffect: false
                             }, void 0, false, {
                                 fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                                lineNumber: 87,
+                                lineNumber: 83,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, `Видео "${video.name}"-index=${index}`, true, {
                         fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                        lineNumber: 50,
+                        lineNumber: 46,
                         columnNumber: 25
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                lineNumber: 47,
+                lineNumber: 43,
                 columnNumber: 13
             }, this),
             loadingStatus ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$Loader$2f$Loader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                lineNumber: 95,
+                lineNumber: 91,
                 columnNumber: 21
             }, this) : null,
             data.length !== videosCount || loadingStatus ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$ShowMoreButton$2f$ShowMoreButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 func: getMoreVideos
             }, void 0, false, {
                 fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-                lineNumber: 100,
+                lineNumber: 96,
                 columnNumber: 21
             }, this) : null
         ]
     }, void 0, true, {
         fileName: "[project]/Components/VideosBlock/VideosBlock.tsx",
-        lineNumber: 45,
+        lineNumber: 41,
         columnNumber: 9
     }, this);
 }
-_s(VideosBlock, "DsLjVGSK1Lopg+pMfFl4u6OsPpM=");
+_s(VideosBlock, "7u4hwI1CNJDTwZdbwrDH7Ja1kY0=");
 _c = VideosBlock;
 var _c;
 __turbopack_context__.k.register(_c, "VideosBlock");

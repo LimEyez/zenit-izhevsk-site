@@ -10,7 +10,7 @@ export default function LatestNews() {
     ]
 
     return (
-        <div className="flex justify-center pt-[30px] pb-[30px]">
+        <div className="flex justify-center pt-[30px] pb-[30px] sm:pl-[12px] sm:pr-[12px] xl:pl-0 xl:pr-0">
             <div
                 className=" max-w-[1200px]"
             >

@@ -1,11 +1,9 @@
 import TableElement from "./TableElement";
-import { TeamElementTable } from "./TeamElementTable.type";
 import { TournamentTableElementProps } from "./TournamentTableElement.interface";
 
 export default function TournamentTableElement(props: TournamentTableElementProps) {
 
-    const borderWidthValue = 2; //px
-    const borderRadiusValue = 30; //px
+
 
     const colSpan = [
         'col-span-4',
@@ -39,7 +37,7 @@ export default function TournamentTableElement(props: TournamentTableElementProp
         <div
             className={`w-full bg-white overflow-hidden border-[2px] gap-[2px] 
         rounded-[30px] grid grid-cols-58 auto-rows-[minmax(60px,auto)]
-        text-[30px]`}>
+        text-[30px] border-[4px] border-white`}>
             {/* Шапка таблицы (названия колонок) */}
             {tableHeadNames.map((th, index) => (
                 <TableElement key={th.name} title={th.name} className={`font-extrabold ${colSpan[index]}`} />

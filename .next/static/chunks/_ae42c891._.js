@@ -109,93 +109,145 @@ function Header() {
     _s();
     const PathName = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const checkScrollTop = ()=>{
+        if (window.scrollY > 10) {
+            setScrolled(true);
+        }
+    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Header.useEffect": ()=>{
-            const handleScroll = {
-                "Header.useEffect.handleScroll": ()=>{
-                    if (window.scrollY > 10) {
-                        setScrolled(true);
-                    } else {
-                        setScrolled(false);
-                    }
+            window.addEventListener("scroll", checkScrollTop);
+            setIsMobile(window.innerWidth < 1000);
+            window.addEventListener("resize", {
+                "Header.useEffect": ()=>{
+                    setIsMobile(window.innerWidth < 1000);
                 }
-            }["Header.useEffect.handleScroll"];
-            window.addEventListener("scroll", handleScroll);
+            }["Header.useEffect"]);
             return ({
                 "Header.useEffect": ()=>{
-                    window.removeEventListener("scroll", handleScroll);
+                    window.removeEventListener("scroll", checkScrollTop);
                 }
             })["Header.useEffect"];
         }
     }["Header.useEffect"], []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "h-[60px] flex flex-col justify-center items-center w-full bg-[#001947] z-2000 sticky top-0",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-full max-w-[1200px] flex justify-center items-center",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                    className: "w-full h-full flex items-center justify-around px-4",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "/",
-                            className: `shrink-0 z-1000 transition-all duration-300 linear ${scrolled ? 'scale-50' : 'scale-100'}`,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                alt: "Зенит Ижевск",
-                                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Zenit$2d$Izhevs$2d$Logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Zenit$2d$Izhevs$2d$Logo$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                width: 76,
-                                height: 104
+    const DesktopHeader = ()=>{
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+            className: "   h-[60px] flex flex-col justify-center items-center w-full bg-[#001947] z-2000 sticky top-0   ",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-full max-w-[1200px] flex justify-center items-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                        className: "w-full h-full flex items-center justify-around px-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/",
+                                className: `shrink-0 z-1000 transition-all duration-300 linear ${scrolled ? 'scale-50' : 'scale-100'}`,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    alt: "Зенит Ижевск",
+                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Zenit$2d$Izhevs$2d$Logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Zenit$2d$Izhevs$2d$Logo$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                    width: 76,
+                                    height: 104
+                                }, void 0, false, {
+                                    fileName: "[project]/Components/Header/Header.tsx",
+                                    lineNumber: 47,
+                                    columnNumber: 29
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Components/Header/Header.tsx",
-                                lineNumber: 41,
+                                lineNumber: 43,
                                 columnNumber: 25
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/Components/Header/Header.tsx",
-                            lineNumber: 37,
-                            columnNumber: 21
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$routesInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RoutesHeader"].filter((route)=>route.path !== "/").map((route)=>{
-                            const isActive = PathName.startsWith(route.path); // Проверка активной страницы
-                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: route.path,
-                                className: `
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$routesInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RoutesHeader"].filter((route)=>route.path !== "/").map((route)=>{
+                                const isActive = PathName.startsWith(route.path); // Проверка активной страницы
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: route.path,
+                                    className: `
                                     text-[20px] transition-all linear duration-50 
-                                    font-light hover:text-[#10839D] 
+                                    font-light not-focus:[#000000] hover:text-[#10839D] 
                                     ${isActive ? "text-[#10839D] border-b border-[#10839D]" : ""}
                                 `,
-                                children: route.title.toUpperCase()
-                            }, route.title, false, {
-                                fileName: "[project]/Components/Header/Header.tsx",
-                                lineNumber: 51,
-                                columnNumber: 29
-                            }, this);
-                        })
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Components/Header/Header.tsx",
-                    lineNumber: 35,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex-1"
+                                    children: route.title.toUpperCase()
+                                }, route.title, false, {
+                                    fileName: "[project]/Components/Header/Header.tsx",
+                                    lineNumber: 57,
+                                    columnNumber: 33
+                                }, this);
+                            })
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Components/Header/Header.tsx",
+                        lineNumber: 41,
+                        columnNumber: 21
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex-1"
+                    }, void 0, false, {
+                        fileName: "[project]/Components/Header/Header.tsx",
+                        lineNumber: 71,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Components/Header/Header.tsx",
+                lineNumber: 40,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/Components/Header/Header.tsx",
+            lineNumber: 37,
+            columnNumber: 13
+        }, this);
+    };
+    const MobileHeader = ()=>{
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+            className: "   h-[60px] flex flex-col justify-center items-center w-full bg-[#001947] z-2000 sticky top-0   ",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-full max-w-[1200px] flex justify-center items-center",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                    className: "w-full h-full flex items-center justify-around px-4",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/",
+                        className: `shrink-0 z-1000 transition-all duration-300 linear ${scrolled ? 'scale-50' : 'scale-100'}`,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            alt: "Зенит Ижевск",
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$images$2f$Zenit$2d$Izhevs$2d$Logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$images$2f$Zenit$2d$Izhevs$2d$Logo$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            width: 76,
+                            height: 104
+                        }, void 0, false, {
+                            fileName: "[project]/Components/Header/Header.tsx",
+                            lineNumber: 93,
+                            columnNumber: 29
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Components/Header/Header.tsx",
+                        lineNumber: 89,
+                        columnNumber: 25
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/Components/Header/Header.tsx",
-                    lineNumber: 65,
-                    columnNumber: 17
+                    lineNumber: 87,
+                    columnNumber: 21
                 }, this)
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "[project]/Components/Header/Header.tsx",
+                lineNumber: 86,
+                columnNumber: 17
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/Components/Header/Header.tsx",
-            lineNumber: 34,
+            lineNumber: 83,
             columnNumber: 13
-        }, this)
-    }, void 0, false, {
+        }, this);
+    };
+    // return isMobile == null ? <></> : (isMobile === true ? <MobileHeader /> : <DesktopHeader />);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DesktopHeader, {}, void 0, false, {
         fileName: "[project]/Components/Header/Header.tsx",
-        lineNumber: 33,
-        columnNumber: 9
+        lineNumber: 108,
+        columnNumber: 12
     }, this);
 }
-_s(Header, "dba3mwm5gBFefOIaoAOJj5mMTuk=", false, function() {
+_s(Header, "wy/aRLVb2FRIj03FE5pzCoi+eAQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
     ];
@@ -301,14 +353,38 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$socialIcons$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/socialIcons.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$socialRoutesInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/socialRoutesInfo.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 'use client';
 ;
 ;
 ;
 ;
 function HeaderSocialLinks() {
+    _s();
+    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "HeaderSocialLinks.useEffect": ()=>{
+            setIsMobile(window.innerWidth < 1000);
+            window.addEventListener("resize", {
+                "HeaderSocialLinks.useEffect": ()=>{
+                    setIsMobile(window.innerWidth < 1000);
+                }
+            }["HeaderSocialLinks.useEffect"]);
+            return ({
+                "HeaderSocialLinks.useEffect": ()=>{
+                    window.removeEventListener("resize", {
+                        "HeaderSocialLinks.useEffect": ()=>{
+                            setIsMobile(window.innerWidth < 1000);
+                        }
+                    }["HeaderSocialLinks.useEffect"]);
+                }
+            })["HeaderSocialLinks.useEffect"];
+        }
+    }["HeaderSocialLinks.useEffect"]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "h-[30px] w-full bg-[#001E51] flex justify-center",
+        className: "h-[30px] w-full bg-[#001E51] justify-center sm:hidden lg:flex",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: " w-full max-w-[1200px] flex flex-row justify-end gap-[20px] pe-[20px]",
             children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$socialRoutesInfo$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SocialRoutesHeader"].map((route)=>{
@@ -324,31 +400,32 @@ function HeaderSocialLinks() {
                             className: "w-full h-full text-[#CCD2DC] hover:text-white"
                         }, void 0, false, {
                             fileName: "[project]/Components/HeaderSocialLinks/HeaderSocialLinks.tsx",
-                            lineNumber: 31,
+                            lineNumber: 48,
                             columnNumber: 33
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Components/HeaderSocialLinks/HeaderSocialLinks.tsx",
-                        lineNumber: 26,
+                        lineNumber: 43,
                         columnNumber: 29
                     }, this)
                 }, route.title, false, {
                     fileName: "[project]/Components/HeaderSocialLinks/HeaderSocialLinks.tsx",
-                    lineNumber: 22,
+                    lineNumber: 39,
                     columnNumber: 25
                 }, this);
             })
         }, void 0, false, {
             fileName: "[project]/Components/HeaderSocialLinks/HeaderSocialLinks.tsx",
-            lineNumber: 13,
+            lineNumber: 30,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/Components/HeaderSocialLinks/HeaderSocialLinks.tsx",
-        lineNumber: 10,
+        lineNumber: 27,
         columnNumber: 9
     }, this);
 }
+_s(HeaderSocialLinks, "MlmSG3uSWWvVgZvDg0SD4XH58F4=");
 _c = HeaderSocialLinks;
 var _c;
 __turbopack_context__.k.register(_c, "HeaderSocialLinks");

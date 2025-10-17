@@ -6,7 +6,7 @@
     color: rgba(16, 131, 157, 1);
 }
 
-.paginationButton{
+.paginationButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +27,11 @@
     color: white;
 }
 
-.paginationCursor{
+.paginationCursor {
     cursor: pointer;
 }
 
-.paginationButton:hover{
+.paginationButton:hover {
     color: white;
 }
 
@@ -41,4 +41,12 @@
 
 .paginationNext {
     margin-left: 5px;
+}
+
+.paginationLink {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

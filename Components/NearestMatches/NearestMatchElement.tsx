@@ -18,32 +18,34 @@ export default function NearestMatchElement(props: NearestMatchElementProps) {
 
     return (
         <div
-            className="w-[360px] h-[360px] border rounded-[20px] flex flex-col justify-center text-center overflow-hidden p-[5px]"
+            className="w-[200px] h-[200px] border rounded-[16px] flex flex-col justify-center text-center overflow-hidden p-[5px] py-[15x]
+            md:w-[360px] md:h-[360px] md:py-0"
         >
-            {/* <div>
-
-            </div> */}
             <div
-                className="flex flex-1 flex-col justify-start pt-[38px]"
+                className="flex flex-1 flex-col justify-center"
             >
                 <p
-                    className="text-[20px] font-light"
+                    className="text-[16px] font-light
+                    "
                 >
                     {props.matchType.toUpperCase()}
                 </p>
-                <div className="flex flex-row justify-center h-[50px] p-[5px] text-[30px] font-bold">
+                <div className=" text-[16px] flex flex-row justify-center p-0 font-bold
+                md:text-[30px] md:5-[5px] md:h-[50px]
+                ">
                     <div className="w-[220px] flex flex-row">
                         <p className="font-extrabold text-center flex-1">
                             {formatedDateString}
                         </p>
-                        <p className="w-[21px]"> | </p>
+                        <p className="w-[14px]"> | </p>
                         <p className="font-extrabold text-center flex-1">
                             {props.time}
                         </p>
                     </div>
                 </div>
                 <p
-                    className="text-[20px] font-light"
+                    className="text-[14px] font-light
+                    md:text-[20px]"
                 >
                     Стадион «{props.stadium}»
                 </p>
@@ -51,25 +53,33 @@ export default function NearestMatchElement(props: NearestMatchElementProps) {
             <div
                 className="flex flex-1 flex-col justify-start gap-[0px]"
             >
-                <div className="flex flex-row justify-center h-[100px] p-[5px]">
-                    <NearestMatchTeamIcon />
-                    <div className="w-[192px] text-[60px] flex flex-row">
+                <div className="flex flex-row justify-center p-[5px] 
+                md:h-[100px]">
+                    <NearestMatchTeamIcon 
+                    className="w-[43px] md:w-[62px] bg-white"/>
+                    <div className="w-[192px] text-[32px] flex flex-row justify-center items-center
+                    md:text-[60px]
+                    ">
                         <p className="font-extrabold text-center flex-1 align-middle">
                             {scores[0]}
                         </p>
-                        <p className="w-[21px] text-[60px] text-center font-extrabold align-middle leading-[1.35]">:</p>
+                        <p className="w-[21px] text-[32x] text-center font-extrabold align-middle leading-[1.35]
+                        md:text-[60px]">:</p>
                         <p className="font-extrabold text-center flex-1 align-middle">
                             {scores[1]}
                         </p>
                     </div>
-                    <NearestMatchTeamIcon />
+                    <NearestMatchTeamIcon 
+                    className="w-[43px] md:w-[62px] bg-white"/>
                 </div>
                 <div className="flex justify-center items-center">
                     <Link
                         href={RouteNames.matches + '/' + props.id}
-                        className="w-[172.5px] h-[37px] flex justify-center items-center border rounded-[20px] hover:bg-[#FFFFFF] hover:text-[#00102D] transition-all duration-300 linear"
+                        className="w-[150px] h-[30px] flex justify-center items-center border 
+                        rounded-[20px] hover:bg-[#FFFFFF] hover:text-[#00102D] transition-all duration-300 linear
+                        md:w-w-[172.5px] md:h-[37px]"
                     >
-                        <p className="text-[20px] font-light">
+                        <p className="text-[16px] font-light md:text-[20px]">
                             ПОДРОБНЕЕ
                         </p>
                     </Link>

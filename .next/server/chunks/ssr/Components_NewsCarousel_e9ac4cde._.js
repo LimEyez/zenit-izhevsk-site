@@ -56,7 +56,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$routesInfo$2e$ts__$5b
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/swiper/modules/index.mjs [app-ssr] (ecmascript) <module evaluation>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__ = __turbopack_context__.i("[project]/node_modules/swiper/modules/autoplay.mjs [app-ssr] (ecmascript) <export default as Autoplay>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$NewsCarousel$2f$PaginationNewsCarousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Components/NewsCarousel/PaginationNewsCarousel.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 'use client';
+;
 ;
 ;
 ;
@@ -134,11 +136,7 @@ function NewsCarousel() {
             swiper.autoplay.start();
         },
         onSwiper: (swiper)=>setSwiperInstance(swiper),
-        className: `
-            w-[100vw] max-h-[70vh] min-h-[440px] flex 
-            justify-center items-center relative 
-            ]overflow-hidden transition-all duration-0 
-        `,
+        className: `w-[100vw] max-h-[70vh] min-h-110 flex justify-center items-center relative overflow-hidden transition-all duration-0`,
         style: {
             height: sizesNewsContainer.height,
             width: sizesNewsContainer.width
@@ -146,7 +144,7 @@ function NewsCarousel() {
         loop: true,
         spaceBetween: 30,
         autoplay: {
-            delay: 5000,
+            delay: 2500,
             disableOnInteraction: false
         },
         // navigation={true}
@@ -160,66 +158,70 @@ function NewsCarousel() {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-full h-full relative flex flex-col items-center",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 alt: `Фото новости ${news.title}-newsId=${news.id}`,
                                 // src={news.img != null && news.img != undefined && news.img != '' ? 
                                 //     news.img : DefaultCarouselImage}
-                                className: "w-full h-full object-cover",
+                                // className="w-full h-full object-cover"
+                                fill: true,
+                                quality: 100,
+                                objectFit: "cover",
                                 src: '/images/Default-Carousel-Image.png'
                             }, void 0, false, {
                                 fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                                lineNumber: 96,
+                                lineNumber: 94,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "absolute z-20 inset-0 h-full w-full newsCarouselGradientBottom"
                             }, void 0, false, {
                                 fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                                lineNumber: 103,
+                                lineNumber: 104,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-full h-full flex flex-col justify-end items-center absolute inset-0",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-full max-w-[1200px] z-30 pb-[60px]",
+                                    className: "w-full max-w-300 z-30 pb-15",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$routesInfo$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RouteNames"].news + `/${news.id}`,
                                         className: `
-                                         text-white text-[60px] w-full font-extrabold 
+                                         text-white text-3xl w-full font-extrabold 
                                         italic text-left leading-[1.1]
+                                        md:text-4xl lg:text-6xl
                                         `,
                                         children: news.title
                                     }, void 0, false, {
                                         fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 108,
                                         columnNumber: 37
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 106,
                                     columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                                lineNumber: 104,
+                                lineNumber: 105,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                        lineNumber: 95,
+                        lineNumber: 93,
                         columnNumber: 25
                     }, this)
-                }, void 0, false, {
+                }, "Slide index=" + index, false, {
                     fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                    lineNumber: 92,
+                    lineNumber: 89,
                     columnNumber: 21
                 }, this);
             }),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute flex flex-col pb-[30px] justify-end items-center z-60 inset-0 pointer-events-none",
+                className: "absolute flex flex-col pb-7.5 justify-end items-center z-60 inset-0 pointer-events-none",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-[1200px] pl-[10px] pr-[10px]",
+                    className: "w-full max-w-300 px-2.5",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$NewsCarousel$2f$PaginationNewsCarousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         NumberOfSlides: LastFiveNews.length,
                         className: "w-full h-full ",
@@ -227,23 +229,23 @@ function NewsCarousel() {
                         activeIndex: indexActiveSlide
                     }, void 0, false, {
                         fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                        lineNumber: 124,
+                        lineNumber: 126,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                    lineNumber: 123,
+                    lineNumber: 125,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-                lineNumber: 122,
+                lineNumber: 124,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Components/NewsCarousel/NewsCarousel.tsx",
-        lineNumber: 64,
+        lineNumber: 65,
         columnNumber: 9
     }, this);
 }

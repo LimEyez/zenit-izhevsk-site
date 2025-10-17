@@ -53,16 +53,17 @@ export default function ListNewsContainer() {
             onPageChange={handlePageClick} // Обработчик смены страницы
             containerClassName="pagination" // Класс для контейнера пагинации
             pageClassName="paginationButton paginationCursor"
-            pageLinkClassName="paginationCursor"
+            pageLinkClassName="paginationCursor paginationLink"
             disabledClassName="paginationDisableButton paginationCursor"
             activeClassName="paginationActiveButton paginationCursor" // Класс для активной страницы
-            previousClassName="paginationButton paginationCursor paginationPrevious"
-            nextLinkClassName="paginationButton paginationCursor paginationNext"
+            previousClassName="paginationButton paginationCursor paginationPrevious paginationLink"
+            nextLinkClassName="paginationButton paginationCursor paginationNext paginationLink"
+            previousLinkClassName="paginationButton paginationCursor paginationPrevious paginationLink"
             breakClassName="paginationButton paginationCursor"
             breakLinkClassName="aginationButton paginationCursor"
             previousLabel="‹" // Символ для предыдущей страницы
             nextLabel="›" // Символ для следующей страницы
-        
+            
           />
         </div>
       </div>

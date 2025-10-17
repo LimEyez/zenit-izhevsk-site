@@ -1,3 +1,23 @@
 {
-  "/page": "app/page.js"
+  "/club/about/page": "app/club/about/page.js",
+  "/club/administration/page": "app/club/administration/page.js",
+  "/club/media/page": "app/club/media/page.js",
+  "/club/page": "app/club/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/fetches/matches/route": "app/fetches/matches/route.js",
+  "/matches/page": "app/matches/page.js",
+  "/matches/schedule/page": "app/matches/schedule/page.js",
+  "/matches/tables/page": "app/matches/tables/page.js",
+  "/news/page": "app/news/page.js",
+  "/page": "app/page.js",
+  "/person/[id]/page": "app/person/[id]/page.js",
+  "/player/[id]/page": "app/player/[id]/page.js",
+  "/stadium/about/page": "app/stadium/about/page.js",
+  "/stadium/how-to-get/page": "app/stadium/how-to-get/page.js",
+  "/stadium/page": "app/stadium/page.js",
+  "/stadium/parking/page": "app/stadium/parking/page.js",
+  "/team/coaches/page": "app/team/coaches/page.js",
+  "/team/page": "app/team/page.js",
+  "/team/players/page": "app/team/players/page.js",
+  "/team/staff/page": "app/team/staff/page.js"
 }

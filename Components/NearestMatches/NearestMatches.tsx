@@ -10,7 +10,7 @@ export default function NearestMatches() {
     ]
 
     return (
-        <div className="flex justify-center pt-[30px] pb-[30px]">
+        <div className="flex justify-center pt-[30px] pb-[30px] sm:px-[12px] xl:px-0 ">
             <div
                 className=" max-w-[1200px] text-center"
             >

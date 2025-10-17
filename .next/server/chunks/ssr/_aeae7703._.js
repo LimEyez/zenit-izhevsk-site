@@ -62,8 +62,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$TournamentTabl
 ;
 ;
 function TournamentTableElement(props) {
-    const borderWidthValue = 2; //px
-    const borderRadiusValue = 30; //px
     const colSpan = [
         'col-span-4',
         'col-span-20',
@@ -116,14 +114,14 @@ function TournamentTableElement(props) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `w-full bg-white overflow-hidden border-[2px] gap-[2px] 
         rounded-[30px] grid grid-cols-58 auto-rows-[minmax(60px,auto)]
-        text-[30px]`,
+        text-[30px] border-[4px] border-white`,
         children: [
             tableHeadNames.map((th, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$TournamentTables$2f$TableElement$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     title: th.name,
                     className: `font-extrabold ${colSpan[index]}`
                 }, th.name, false, {
                     fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                    lineNumber: 45,
+                    lineNumber: 43,
                     columnNumber: 17
                 }, this)),
             teamInfo.map((team, indexTeam)=>team.map((info, index)=>{
@@ -135,20 +133,20 @@ function TournamentTableElement(props) {
                                     className: "w-[50px] h-[50px] bg-white mr-[15px] flex-shrink-0"
                                 }, void 0, false, {
                                     fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 51,
                                     columnNumber: 33
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: info
                                 }, void 0, false, {
                                     fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 54,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, props.groupName + 'index=' + indexTeam + '-indexParam=' + index, true, {
                             fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                            lineNumber: 52,
+                            lineNumber: 50,
                             columnNumber: 29
                         }, this);
                     } else {
@@ -157,7 +155,7 @@ function TournamentTableElement(props) {
                             title: info
                         }, props.groupName + 'index=' + indexTeam + '-indexParam=' + index, false, {
                             fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-                            lineNumber: 63,
+                            lineNumber: 61,
                             columnNumber: 29
                         }, this);
                     }
@@ -165,7 +163,7 @@ function TournamentTableElement(props) {
         ]
     }, void 0, true, {
         fileName: "[project]/Components/TournamentTables/TournamentTableElement.tsx",
-        lineNumber: 39,
+        lineNumber: 37,
         columnNumber: 9
     }, this);
 }
@@ -330,7 +328,7 @@ function TournamentTables() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "h-auto w-full pt-[30px] pb-[30px] flex justify-center items-center",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "h-full w-full max-w-[1200px] flex flex-col justify-center items-center shrink-0 ",
+            className: "h-full w-full max-w-[1200px] flex flex-col justify-center items-center shrink-0 sm:pl-[12px] sm:pr-[12px] xl:pl-0 xl:pr-0",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Components$2f$BasicTitle$2f$BasicTitle$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     text: "Турнирные таблицы"
@@ -343,7 +341,7 @@ function TournamentTables() {
                     className: "h-full w-full flex flex-col justify-center gap-[30px]",
                     children: tables.map((table)=>{
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col justify-start w-full pl-[20px] pr-[20px]",
+                            className: "flex flex-col justify-start w-full",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "mb-[15px] pl-[45px] pr-[45px] text-[30px] font-light",

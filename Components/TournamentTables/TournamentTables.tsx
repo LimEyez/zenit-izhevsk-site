@@ -153,14 +153,14 @@ export default function TournamentTables() {
     return (
         <div className="h-auto w-full pt-[30px] pb-[30px] flex justify-center items-center">
             <div
-                className="h-full w-full max-w-[1200px] flex flex-col justify-center items-center shrink-0 "
+                className="h-full w-full max-w-[1200px] flex flex-col justify-center items-center shrink-0 sm:pl-[12px] sm:pr-[12px] xl:pl-0 xl:pr-0"
             >
                 <BasicTitle text="Турнирные таблицы" />
                 <div className="h-full w-full flex flex-col justify-center gap-[30px]">
                     {
                         tables.map((table) => {
                             return (
-                                <div key={table.tableName} className="flex flex-col justify-start w-full pl-[20px] pr-[20px]">
+                                <div key={table.tableName} className="flex flex-col justify-start w-full">
                                     <p className="mb-[15px] pl-[45px] pr-[45px] text-[30px] font-light">
                                         {table.tableName}
                                     </p>
